@@ -1,8 +1,17 @@
+body {
+  margin: 0;
+  background: #5b595921;
+  font-family: 'Poppins', sans-serif;
+  line-height: 100%;
+  text-align: justify;
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Contenedor del formulario */
 form {
   max-width: 400px;
-  margin: 50px auto;
-  background: #f9f9f9;
+  margin: 150px auto;
+  background: linear-gradient(135deg, #c5e7ebc9, #7f8fea3d);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -11,6 +20,21 @@ form {
 /* Agrupación de campos del formulario */
 .form-group {
   margin-bottom: 20px;
+}
+
+form h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #4c5bafb3;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease-in-out, color 0.3s;
+  cursor: pointer;
+}
+
+form h3:hover {
+  transform: scale(1.05);
+  color: #455fa0;
 }
 
 /* Estilo de etiquetas */
@@ -27,12 +51,13 @@ input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 15px;
   border: 1px solid #ddd;
   outline: none;
   box-sizing: border-box;
   font-size: 14px;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 5px #4a99d544;
 }
 
 input[type="text"]:focus,
@@ -49,11 +74,12 @@ button[type="submit"] {
   background-color: #4c5bafb3;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 0 5px rgba(18, 29, 45, 0.5);
 }
 
 button[type="submit"]:hover {
