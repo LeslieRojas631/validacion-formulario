@@ -1,0 +1,75 @@
+/* Contenedor del formulario */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Agrupación de campos del formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilo de etiquetas */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Estilo de campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4c6aaf;
+  box-shadow: 0 0 5px rgba(76, 117, 175, 0.5);
+}
+
+/* Botón de envío */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4c5bafb3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #455fa0;
+  transform: translateY(-2px);
+}
+
+/* Mensajes de error */
+.error-message {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Animación de botón */
+button[type="submit"]:active {
+  transform: translateY(1px);
+  background-color: #893d8c;
+}
